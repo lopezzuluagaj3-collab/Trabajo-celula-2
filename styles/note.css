@@ -1,0 +1,57 @@
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefbd8; /* amarillo suave de bloc de notas */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+    }
+
+    /* Título principal */
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #795548; /* color marrón suave */
+    }
+
+    /* Contenedor de notas */
+    .notas-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+    }
+
+    /* Cada nota como tarjeta */
+    .nota {
+      background: linear-gradient(145deg, #fff59d, #fff176); /* degradado amarillo */
+      border: 2px solid #fbc02d; /* borde amarillo oscuro */
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      min-height: 150px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+      transition: transform 0.2s; /* efecto hover */
+    }
+
+    /* Efecto hover */
+    .nota:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Título de cada nota */
+    .nota h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #f57f17;
+    }
+
+    /* Texto de la nota */
+    .nota p {
+      margin: 10px 0 0 0;
+      line-height: 1.4;
+    }
