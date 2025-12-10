@@ -18,7 +18,7 @@
     }
 
     /* Contenedor de notas */
-    .notas-container {
+    .note-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -27,7 +27,7 @@
     }
 
     /* Cada nota como tarjeta */
-    .nota {
+    .note {
       background: linear-gradient(145deg, #fff59d, #fff176); /* degradado amarillo */
       border: 2px solid #fbc02d; /* borde amarillo oscuro */
       border-radius: 12px;
@@ -39,19 +39,19 @@
     }
 
     /* Efecto hover */
-    .nota:hover {
+    .note:hover {
       transform: translateY(-5px);
     }
 
     /* Título de cada nota */
-    .nota h2 {
+    .note h2 {
       margin-top: 0;
       font-size: 1.3rem;
       color: #f57f17;
     }
 
     /* Texto de la nota */
-    .nota p {
+    .note p {
       margin: 10px 0 0 0;
       line-height: 1.4;
     }
