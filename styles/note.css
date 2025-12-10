@@ -1,57 +1,60 @@
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fefbd8; /* amarillo suave de bloc de notas */
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #333;
-    }
+section {
+  height: 700px;
+  width: 700px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefbd8; /* amarillo suave de bloc de notas */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
 
-    /* Título principal */
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #795548; /* color marrón suave */
-    }
 
-    /* Contenedor de notas */
-    .note-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 1000px;
-    }
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #795548; /* color marrón suave */
+}
 
-    /* Cada nota como tarjeta */
-    .note {
-      background: linear-gradient(145deg, #fff59d, #fff176); /* degradado amarillo */
-      border: 2px solid #fbc02d; /* borde amarillo oscuro */
-      border-radius: 12px;
-      padding: 20px;
-      width: 280px;
-      min-height: 150px;
-      box-shadow: 4px 4px 10px rgba(0,0,0,0.1); /* sombra suave */
-      transition: transform 0.2s; /* efecto hover */
-    }
+/* Contenedor de notas */
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 700px;
+}
 
-    /* Efecto hover */
-    .note:hover {
-      transform: translateY(-5px);
-    }
+/* Cada nota como tarjeta */
+.note {
+  background: linear-gradient(145deg, #fff59d, #fff176); /* degradado amarillo */
+  border: 2px solid #fbc02d; /* borde amarillo oscuro */
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  min-height: 150px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1); /* sombra suave */
+  transition: transform 0.2s; /* efecto hover */
+}
 
-    /* Título de cada nota */
-    .note h2 {
-      margin-top: 0;
-      font-size: 1.3rem;
-      color: #f57f17;
-    }
+/* Efecto hover */
+.note:hover {
+  transform: translateY(-5px);
+}
 
-    /* Texto de la nota */
-    .note p {
-      margin: 10px 0 0 0;
-      line-height: 1.4;
-    }
+/* Título de cada nota */
+.note h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #f57f17;
+}
+
+/* Texto de la nota */
+.note p {
+  margin: 10px 0 0 0;
+  line-height: 1.4;
+}
