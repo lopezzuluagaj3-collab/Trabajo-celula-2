@@ -16,18 +16,11 @@ body{
 }
 
 
-/* Ajuste global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Todos los iframes ocultos por defecto */
 .app {
     margin: 70px;
     position: fixed;
-    width: calc(70vh - 50px);
+    width: calc(85vh - 50px);
     height: calc(70vh - 50px);
     border-radius: 20px;
     border: none;
@@ -67,4 +60,3 @@ body{
 .barra .icon img:hover {
     transform: scale(1.15);
 }
-
