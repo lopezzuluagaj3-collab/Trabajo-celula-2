@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.temporizador {
+    width: 500px;
+    height: 400px;
+    background: black;
+    color: white;
+    border-radius: 2rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Título */
+.temporizador h1 {
+    margin-bottom: 20px;
+}
+
+/* Número principal */
+.numero {
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+/* Número difuminado */
+.difuminado {
+    font-size: 60px;
+    position: absolute;
+    top: 100px;
+    color: rgba(255, 255, 255, 0.25);
+    filter: blur(6px);
+    z-index: 1;
+}
+
+/* Botones */
+.botones {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #666;
+}
