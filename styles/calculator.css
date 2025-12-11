@@ -10,6 +10,7 @@ body {
     justify-content: center;    
     align-items: justify;        
     background: #eee;
+    margin: 60px;
 }
 
 .calculator {
@@ -17,6 +18,7 @@ body {
     background-color: rgb(17, 16, 17);
     border-radius: 25px;
     padding: 20px;
+
     display: grid;              
     grid-template-rows: 100px auto;
     gap: 15px;
