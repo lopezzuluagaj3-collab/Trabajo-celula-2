@@ -10,4 +10,8 @@ What can you do in MiniOS? View a main page that looks like an operating system.
 
 What is each part? index.html: here you see the main interface of MiniOS. apps/: contains the different applications, each one is an HTML file. styles/: contains the CSS file to style MiniOS.
 
+<<<<<<< HEAD
 development team Juan Diego Yolanda Brayhan Juan Jose Pablo
+=======
+development team Juan Diego Yolanda Brayhan Juan Jose Pablo
+>>>>>>> 77d454dc9c51f8232cdca2e694ab8dd454faf15c
