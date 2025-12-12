@@ -8,7 +8,7 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background:
         linear-gradient(rgba(136, 136, 136, 0.027), rgba(20, 19, 19, 0.281)),
-        url('../imagenes/pexels-therato-1933239.jpg');
+        url('../imagen_inicio/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;     
     background-position: center; 
