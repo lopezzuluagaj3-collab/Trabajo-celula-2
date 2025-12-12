@@ -1,67 +1,69 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and borders don't increase element size */
 }
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background:
+        /* Gradient overlay on top of the background image */
         linear-gradient(rgba(136, 136, 136, 0.027), rgba(20, 19, 19, 0.281)),
+        /* Main background image */
         url('../imagen_inicio/leonard-cotte-c1Jp-fo53U8-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;     
-    background-position: center; 
-    min-height: 100vh;
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-size: cover;       /* Makes image cover the entire screen */
+    background-position: center;  /* Centers the image */
+    min-height: 100vh;            /* Ensures the body fills the full viewport height */
 }
 
 
-/* Todos los iframes ocultos por defecto */
+/* All iframes hidden by default */
 .app {
     margin: 70px;
     position: fixed;
-    width: calc(85vh - 50px);
+    width: calc(85vh - 50px);   /* Responsive size based on viewport height */
     height: calc(70vh - 50px);
-    border-radius: 20px;
+    border-radius: 20px;        /* Rounded corners */
     border: none;
-    display: none;
-    background: white;
+    display: none;              /* Initially hidden */
+    background: white;          /* White background for the iframe */
 }
 
-/* Cuando el id coincide con el hash de la URL */
+/* When the element's ID matches the URL hash */
 .app:target {
-    display: block;
+    display: block; /* Makes the iframe visible */
 }
 
-/* Barra inferior tipo escritorio */
+/* Bottom bar styled like a desktop dock */
 .barra {
     position: fixed;
-    bottom: 0;
+    bottom: 0;                 /* Sticks to the bottom of the screen */
     left: 0;
     width: 100%;
     height: 70px;
-    background: #222222c0;
-    backdrop-filter: blur(3px);
+    background: #222222c0;     /* Semi-transparent dark background */
+    backdrop-filter: blur(3px);/* Blur effect behind the bar */
     padding: 10px;
     display: flex;
-    gap: 25px;
+    gap: 25px;                 /* Space between icons */
     align-items: center;
-    justify-content: center;
+    justify-content: center;   /* Centers icons horizontally */
 }
 
-/* Botones de la barra */
+/* Buttons (icons) inside the bar */
 .barra .icon img {
     width: 40px;
     height: 40px;
-    cursor: pointer;
-
-    transition: transform .2s;
+    cursor: pointer;           /* Cursor changes to pointer */
+    transition: transform .2s; /* Smooth hover animation */
 }
 
 .barra .icon img:hover {
-    transform: scale(1.15);
+    transform: scale(1.15);    /* Slight zoom on hover */
 }
 
+/* Specific icon with alt="Volver al escritorio" */
 .barra .icon img[alt="Volver al escritorio"] {
-    cursor: pointer;
+    cursor: pointer;           /* Ensures pointer cursor */
 }

@@ -3,41 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Clima - MiniOS</title>
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css"> <!-- External stylesheet -->
 </head>
 <body>
 
-    <h1>Clima</h1>
-    <p>Información del clima actual</p>
+    <h1>Clima</h1> <!-- Main page title -->
+    <p>Información del clima actual</p> <!-- Short description -->
 
-    <form>
+    <form> <!-- Simple city search form -->
         <label for="ciudad">Buscar ciudad:</label>
-        <input type="text" id="ciudad" name="ciudad" value="Medellín" placeholder="Escribe una ciudad">
+        <input 
+            type="text" 
+            id="ciudad" 
+            name="ciudad" 
+            value="Medellín" 
+            placeholder="Escribe una ciudad"
+        >
     </form>
 
-    <hr>
-    
-    <div class="sol-container">
-        <p class="sol">☀️</p>
-        <p class="temperatura">25°C</p>
-        <p>Soleado</p>
+    <hr> <!-- Divider line -->
+
+    <div class="sol-container"> <!-- Weather icon + main data -->
+        <p class="sol">☀️</p>          <!-- Sun emoji (current weather icon) -->
+        <p class="temperatura">25°C</p> <!-- Main temperature -->
+        <p>Soleado</p>                 <!-- Weather description -->
     </div>
     
-    <h2>Medellín, Colombia</h2>
-    <p>Temperatura: 24°C</p>
+    <h2>Medellín, Colombia</h2> <!-- City name -->
+    <p>Temperatura: 24°C</p>     <!-- Extra info -->
     <p>Estado: Soleado</p>
 
-    <h3>Detalles</h3>
+    <h3>Detalles</h3> <!-- Additional details section -->
     <p>Humedad: 65%</p>
     <p>Viento: 12 km/h</p>
     <p>Presión: 1013 hPa</p>
     <p>Sensación térmica: 26°C</p>
 
-    <h3>Pronóstico</h3>
+    <h3>Pronóstico</h3> <!-- Forecast section -->
     <p>Martes: 25°C - Soleado</p>
     <p>Miércoles: 23°C - Parcialmente nublado</p>
     <p>Jueves: 21°C - Lluvioso</p>
-
 
 </body>
 </html>

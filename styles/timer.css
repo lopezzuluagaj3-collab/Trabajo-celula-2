@@ -1,72 +1,72 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures borders/padding don’t affect element size */
 }
 
 body {
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+    background-color: #111;          /* Dark background */
+    display: flex;                   /* Centers content horizontally */
+    justify-content: center;         /* Centers content */
+    align-items: center;             /* Centers vertically */
+    height: 100vh;                   /* Full viewport height */
+    font-family: Arial, sans-serif;  /* Main font */
 }
 
 .temporizador {
     width: 500px;
     height: 400px;
-    background: black;
+    background: black;               /* Main container background */
     color: white;
-    border-radius: 2rem;
+    border-radius: 2rem;             /* Rounded corners */
     padding: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;          /* Elements stacked vertically */
     align-items: center;
-    position: relative;
+    position: relative;              /* Needed for the blurred number */
 }
 
-/* Título */
+/* Title */
 .temporizador h1 {
-    margin-bottom: 20px;
+    margin-bottom: 20px;             /* Spacing under the title */
 }
 
-/* Número principal */
+/* Main visible number */
 .numero {
     font-size: 60px;
     font-weight: bold;
-    position: relative;
-    z-index: 2;
+    position: relative;              /* Stays above the blurred version */
+    z-index: 2;                      /* On top */
 }
 
-/* Número difuminado */
+/* Blurred background number */
 .difuminado {
     font-size: 60px;
     position: absolute;
-    top: 100px;
-    color: rgba(255, 255, 255, 0.25);
-    filter: blur(6px);
-    z-index: 1;
+    top: 100px;                      /* Positioned behind the main number */
+    color: rgba(255, 255, 255, 0.25);/* Light transparent tone */
+    filter: blur(6px);               /* Blur effect */
+    z-index: 1;                      /* Behind the main number */
 }
 
-/* Botones */
+/* Button section */
 .botones {
     margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    display: grid;                   /* Grid for equal button layout */
+    grid-template-columns: repeat(3, 1fr); /* Three buttons per row */
+    gap: 15px;                       /* Space between buttons */
 }
 
 button {
     padding: 10px;
     border-radius: 10px;
-    background: #444;
+    background: #444;                /* Default button color */
     color: white;
     font-size: 16px;
     border: none;
-    cursor: pointer;
+    cursor: pointer;                 /* Makes it clickable */
 }
 
 button:hover {
-    background: #666;
+    background: #666;                /* Lighter on hover */
 }
