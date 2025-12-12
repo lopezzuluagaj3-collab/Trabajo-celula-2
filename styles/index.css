@@ -61,3 +61,7 @@ body{
 .barra .icon img:hover {
     transform: scale(1.15);
 }
+
+.barra .icon img[alt="Volver al escritorio"] {
+    cursor: pointer;
+}
